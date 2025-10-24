@@ -39,7 +39,7 @@ function Choose() {
     'pulse'
   ];
 
-  const [currentTransitions, setCurrentTransitions] = useState([]);
+  const [currentTransitions, setCurrentTransitions] = useState<string[]>([]);
 
   useEffect(() => {
     // Set initial transitions

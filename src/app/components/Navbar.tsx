@@ -11,7 +11,7 @@ function Navbar() {
       const scrollPosition = window.scrollY;
 
       sections.forEach(section => {
-        const element = document.querySelector(section);
+        const element = document.querySelector(section) as HTMLElement | null;
         if (element) {
           const offsetTop = element.offsetTop - 100;
           const offsetBottom = offsetTop + element.offsetHeight;
