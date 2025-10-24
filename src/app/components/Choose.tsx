@@ -6,7 +6,7 @@ function Choose() {
   
   const imageSets = [
     [
-      { src: "/man.png", size: "large", alt: "Construction worker" },
+      { src: "https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1296", size: "large", alt: "Construction worker" },
       { src: "/f1.jpg", size: "medium", alt: "Construction site" },
       { src: "/f2.jpg", size: "medium", alt: "Industrial work" },
       { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "small", alt: "Technical work" },
@@ -21,7 +21,7 @@ function Choose() {
     ],
     [
       { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "large", alt: "Industrial equipment" },
-      { src: "/man.png", size: "medium", alt: "Expert team" },
+      { src: "https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1296", size: "medium", alt: "Expert team" },
       { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "medium", alt: "Power systems" },
       { src: "/f1.jpg", size: "small", alt: "Site work" },
       { src: "/f2.jpg", size: "small", alt: "Project completion" }

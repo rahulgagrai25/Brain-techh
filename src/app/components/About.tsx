@@ -15,16 +15,16 @@ function About() {
           <picture>
             <source 
               media="(max-width: 600px)" 
-              srcSet="https://www.aceee.org/sites/default/files/styles/hero_wide_x2_1440_/public/hero-images/decarbonizing-industry-energy-efficiency.webp?itok=D3mwgPxQ" 
+              srcSet="https://marketplace.canva.com/WSSAg/MAEyCBWSSAg/1/s2/canva-city-industrial-factory-in-countryside-MAEyCBWSSAg.jpg" 
             />
             <source 
               media="(min-width: 601px)" 
-              srcSet="https://www.aceee.org/sites/default/files/styles/hero_wide_x2_1440_/public/hero-images/decarbonizing-industry-energy-efficiency.webp?itok=D3mwgPxQ80" 
+              srcSet="https://marketplace.canva.com/WSSAg/MAEyCBWSSAg/1/s2/canva-city-industrial-factory-in-countryside-MAEyCBWSSAg.jpg" 
             />
             <img 
               aria-hidden="true" 
               decoding="async" 
-              src="https://www.aceee.org/sites/default/files/styles/hero_wide_x2_1440_/public/hero-images/decarbonizing-industry-energy-efficiency.webp?itok=D3mwgPxQ80" 
+              src="https://marketplace.canva.com/WSSAg/MAEyCBWSSAg/1/s2/canva-city-industrial-factory-in-countryside-MAEyCBWSSAg.jpg" 
               alt="Industrial background" 
               width="1920"
               height="1080"
@@ -365,7 +365,7 @@ function About() {
               135deg,
               rgba(255, 255, 255, 0.92) 0%,
               rgba(255, 255, 255, 0.85) 50%,
-              rgba(255, 255, 255, 0.89) 100%
+              rgba(255, 255, 255, 0.3) 100%
             );
           }
         }
