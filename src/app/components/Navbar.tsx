@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 font-roboto">
       <nav className={`
-        bg-white shadow-md
+        bg-gray-300 shadow-md
         flex flex-col md:flex-row
         transition-all duration-300 ease-in-out
         ${isMenuOpen ? 'h-screen md:h-auto' : 'h-16 md:h-16'}
