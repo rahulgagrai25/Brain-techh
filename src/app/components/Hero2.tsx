@@ -1,7 +1,7 @@
 import React from 'react';
-import './Hero.css'; // We'll create this CSS file
+import './Hero2.css';
 
-function Hero() {
+function Hero2() {
   return (
     <>
       {/* ============================================ */}
@@ -28,65 +28,45 @@ function Hero() {
               />
             </a>
           </div>
-          {/* To make your own background crops of people use https://www.remove.bg/ */}
-          <picture className="cs-picture">
-            <source 
-              media="(max-width: 600px)" 
-              srcSet="/man.png" 
-            />
-            <source 
-              media="(min-width: 601px)" 
-              srcSet="/man.png" 
-            />
-            <img 
-              aria-hidden="true" 
-              decoding="async" 
-              src="/man.png" 
-              alt="construction worker" 
-              width="581" 
-              height="662"
-            />
-          </picture>
         </div>
         <div className="cs-image-group">
-          {/* Left Image */}
-          <picture className="cs-background cs-background1">
-            <source 
-              media="(max-width: 600px)" 
-              srcSet="/f1.jpg" 
-            />
-            <source 
-              media="(min-width: 601px)" 
-              srcSet="/f1.jpg" 
-            />
-            <img 
-              aria-hidden="true" 
-              decoding="async" 
-              src="/f1.jpg" 
-              alt="construction site" 
-              width="1290" 
-              height="684"
-            />
-          </picture>
-          {/* Right Image */}
-          <picture className="cs-background cs-background2">
-            <source 
-              media="(max-width: 600px)" 
-              srcSet="/f2.jpg" 
-            />
-            <source 
-              media="(min-width: 601px)" 
-              srcSet="/f2.jpg" 
-            />
-            <img 
-              aria-hidden="true" 
-              decoding="async" 
-              src="/f2.jpg" 
-              alt="construction site" 
-              width="630" 
-              height="684"
-            />
-          </picture>
+          {/* Slideshow Background */}
+          <div className="cs-background cs-background1">
+            <div className="cs-slideshow">
+              <div className="cs-slide">
+                <img 
+                  src="/f1.jpg" 
+                  alt="construction site" 
+                  width="1290" 
+                  height="684"
+                />
+              </div>
+              <div className="cs-slide">
+                <img 
+                  src="/f2.jpg" 
+                  alt="construction site" 
+                  width="1290" 
+                  height="684"
+                />
+              </div>
+              <div className="cs-slide">
+                <img 
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" 
+                  alt="construction site" 
+                  width="1290" 
+                  height="684"
+                />
+              </div>
+              <div className="cs-slide">
+                <img 
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg" 
+                  alt="construction site" 
+                  width="1290" 
+                  height="684"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -108,9 +88,9 @@ function Hero() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Meeting Customer Expectations</h3>
+                <h3 className="cs-h3">Best House Renovation</h3>
                 <p className="cs-item-text">
-                  We stay fully committed to every client, ensuring each project meets and exceeds expectations.
+                  Transform your home with trendy flooring and finishes!
                 </p>
               </a>
             </li>
@@ -125,9 +105,9 @@ function Hero() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Expert Engineers & Technicians</h3>
+                <h3 className="cs-h3">Quality Always Matters</h3>
                 <p className="cs-item-text">
-                  Our skilled team consistently delivers 100% output across all services with precision and dedication.
+                  Quality renovations provide lasting beauty and functionality.
                 </p>
               </a>
             </li>
@@ -142,9 +122,9 @@ function Hero() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Reliable & Capable Execution</h3>
+                <h3 className="cs-h3">Effective Teamwork</h3>
                 <p className="cs-item-text">
-                  From small tasks to the bulkiest erection and commissioning projects, we handle it all efficiently.
+                  Collaboration drives success through shared goals and communication.
                 </p>
               </a>
             </li>
@@ -159,10 +139,10 @@ function Hero() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <span className="cs-number">7+</span>
-                <h3 className="cs-h3">Years of Excellence</h3>
+                <span className="cs-number">3K+</span>
+                <h3 className="cs-h3">Happy Customers</h3>
                 <p className="cs-item-text">
-                  Delivering trusted services with integrity, quality, and customer satisfaction.
+                  With more than 7 years of expertise we served our clients.
                 </p>
                 <span className="cs-fake-link">
                   Let's Work Together
@@ -203,4 +183,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Hero2;
