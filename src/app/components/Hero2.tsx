@@ -43,7 +43,7 @@ function Hero2() {
               </div>
               <div className="cs-slide">
                 <img 
-                  src="/f2.jpg" 
+                  src="https://plus.unsplash.com/premium_photo-1664299488927-4352e3d2a71e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" 
                   alt="construction site" 
                   width="1290" 
                   height="684"
@@ -51,7 +51,7 @@ function Hero2() {
               </div>
               <div className="cs-slide">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction1.jpg" 
+                  src="https://plus.unsplash.com/premium_photo-1661947059108-6ac42d1c1515?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" 
                   alt="construction site" 
                   width="1290" 
                   height="684"
@@ -59,7 +59,7 @@ function Hero2() {
               </div>
               <div className="cs-slide">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg" 
+                  src="https://plus.unsplash.com/premium_photo-1682144333631-eac578433ea1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" 
                   alt="construction site" 
                   width="1290" 
                   height="684"
@@ -88,9 +88,9 @@ function Hero2() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Best House Renovation</h3>
+                <h3 className="cs-h3">Meeting Customer Expectations</h3>
                 <p className="cs-item-text">
-                  Transform your home with trendy flooring and finishes!
+                  We stay fully committed to every client, ensuring each project meets and exceeds expectations.
                 </p>
               </a>
             </li>
@@ -105,9 +105,9 @@ function Hero2() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Quality Always Matters</h3>
+                <h3 className="cs-h3">Expert Engineers & Technicians</h3>
                 <p className="cs-item-text">
-                  Quality renovations provide lasting beauty and functionality.
+                  Our skilled team consistently delivers 100% output across all services with precision and dedication.
                 </p>
               </a>
             </li>
@@ -122,9 +122,9 @@ function Hero2() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <h3 className="cs-h3">Effective Teamwork</h3>
+                <h3 className="cs-h3">Reliable & Capable Execution</h3>
                 <p className="cs-item-text">
-                  Collaboration drives success through shared goals and communication.
+                  From small tasks to the bulkiest erection and commissioning projects, we handle it all efficiently.
                 </p>
               </a>
             </li>
@@ -139,41 +139,10 @@ function Hero2() {
                   height="40" 
                   aria-hidden="true"
                 />
-                <span className="cs-number">3K+</span>
-                <h3 className="cs-h3">Happy Customers</h3>
+                <h3 className="cs-h3"><span className='text-4xl'>7+</span> Years of Excellence</h3>
                 <p className="cs-item-text">
-                  With more than 7 years of expertise we served our clients.
+                  Delivering trusted services with integrity, quality, and customer satisfaction.
                 </p>
-                <span className="cs-fake-link">
-                  Let's Work Together
-                  <img 
-                    className="cs-arrow" 
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-arrow-up.svg" 
-                    decoding="async" 
-                    alt="arrow" 
-                    width="20" 
-                    height="20" 
-                    aria-hidden="true"
-                  />
-                </span>
-                <picture className="cs-background">
-                  <source 
-                    media="(max-width: 600px)" 
-                    srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg" 
-                  />
-                  <source 
-                    media="(min-width: 601px)" 
-                    srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg" 
-                  />
-                  <img 
-                    aria-hidden="true" 
-                    decoding="async" 
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg" 
-                    alt="construction site" 
-                    width="630" 
-                    height="684"
-                  />
-                </picture>
               </a>
             </li>
           </ul>
