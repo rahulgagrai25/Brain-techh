@@ -510,9 +510,10 @@ function Choose() {
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Expert Team</h3>
+                  <h3 className="cs-advantage-title">Experienced Team</h3>
                   <p className="cs-advantage-text">
-                    Our team of expert engineers and technicians always delivers 100% output in all our services.
+                    Our engineers, technicians, and experts bring 30+ years of experience 
+in handling complex operations and maintenance tasks.
                   </p>
                 </div>
               </li>
@@ -528,9 +529,10 @@ function Choose() {
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Integrity & Quality</h3>
+                  <h3 className="cs-advantage-title">Comprehensive Services</h3>
                   <p className="cs-advantage-text">
-                    Integrity and fair workmanship in all matter. Quality Control and Quality assurance.
+                    From design to maintenance, we offer end-to-end support for 
+power plants, industrial systems, and utilities.
                   </p>
                 </div>
               </li>
@@ -546,9 +548,10 @@ function Choose() {
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Large Scale Projects</h3>
+                  <h3 className="cs-advantage-title">Proven Track Record</h3>
                   <p className="cs-advantage-text">
-                    Capable to undertake even the bulkiest erection and commissioning project to be accomplished.
+                    We’ve successfully managed projects for Thermal Power Plants, 
+Distilleries, and more, ensuring maximum efficiency and minimal downtime.
                   </p>
                 </div>
               </li>
@@ -564,9 +567,10 @@ function Choose() {
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Fast Response</h3>
+                  <h3 className="cs-advantage-title">Client-Centric Approach</h3>
                   <p className="cs-advantage-text">
-                    Fast response, Customer service / Call service / Manpower arrangement. Prompt and Efficient services.
+                    We strive to meet and exceed client expectations with 
+innovative solutions and cost-effective services.
                   </p>
                 </div>
               </li>
