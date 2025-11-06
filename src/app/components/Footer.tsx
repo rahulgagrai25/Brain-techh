@@ -330,6 +330,11 @@ function Footer() {
               <p className="cs-company-description">
                 Leading industrial solutions provider with decades of experience in power plant maintenance, engineering consultancy, and project services.
               </p>
+              <p className="cs-company-description">
+                GST: 09AAMCB5354P1ZX<br/>
+                CIN: U42909UP2024PYC201485<br/>
+                ISO 9001:2015 (certificate no. 305025102907Q)
+              </p>
               <div className="cs-social-links">
                 <a href="https://www.linkedin.com/in/manvendra-singh-7163aa30/?originalSubdomain=in" className="cs-social-link" aria-label="LinkedIn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -346,11 +351,11 @@ function Footer() {
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/engineersbraintech?igsh=MWFkYXBxcDBmdHhveQ==" className="cs-social-link" aria-label="Instagram">
+                {/* <a href="https://www.instagram.com/engineersbraintech?igsh=MWFkYXBxcDBmdHhveQ==" className="cs-social-link" aria-label="Instagram">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.703-3.061-1.753-.613-1.05-.613-2.346 0-3.396.613-1.05 1.764-1.753 3.061-1.753s2.448.703 3.061 1.753c.613 1.05.613 2.346 0 3.396-.613 1.05-1.764 1.753-3.061 1.753z"/>
                   </svg>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -358,11 +363,11 @@ function Footer() {
             <div className="cs-links-section cs-quick-links">
               <h3>Quick Links</h3>
               <ul className="cs-links-list">
+                <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/services">Our Services</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/careers">Careers</a></li>
-                <li><a href="/blog">Blog</a></li>
+                <li><a href="/distillation">Distillation Process</a></li>
+                <li><a href="/contact">Contact Us</a></li>
               </ul>
             </div>
 
@@ -390,6 +395,13 @@ function Footer() {
                 </div>
                 <div className="cs-contact-item">
                   <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+                  </svg>
+                  <span> Corporate Office: Plot No. 606, Rajendra Nagar,<br/>Sector-3, Vasundhra, Ghaziabad,<br/>UP – 
+                          201012 (Delhi NCR)</span>
+                </div>
+                <div className="cs-contact-item">
+                  <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                   </svg>
                   <span>0120-4048261, 9719671863, 9315902512</span>
@@ -398,13 +410,7 @@ function Footer() {
                   <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
-                  <span>braintech@engineer.com</span>
-                </div>
-                <div className="cs-contact-item">
-                  <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                  </svg>
-                  <span>braintechengineers@yahoo.com</span>
+                  <p>braintechengineers@yahoo.com<br/>braintech@engineer.com</p>
                 </div>
               </div>
             </div>
@@ -413,7 +419,7 @@ function Footer() {
           {/* Bottom Bar */}
           <div className="cs-bottom-bar">
             <div className="cs-copyright">
-              © {currentYear} Braintechh Engineers Private Limited. All rights reserved.
+              © {currentYear} Braintechh Engineers Private Limited. All rights reserved.<br/>Developed by Apparotech Innovation.
             </div>
             <div className="cs-legal-links">
               <a href="/privacy">Privacy Policy</a>
