@@ -98,7 +98,7 @@ function AboutPage() {
             <div className="cs-service-card">
               <div className="cs-service-icon">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gear.svg" 
+                  src="/bulb.svg" 
                   alt="Power Plants" 
                   width="40"
                   height="40"
@@ -117,7 +117,7 @@ function AboutPage() {
             <div className="cs-service-card">
               <div className="cs-service-icon">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/factory.svg" 
+                  src="/bulb.svg" 
                   alt="Industrial Plants" 
                   width="40"
                   height="40"
@@ -136,7 +136,7 @@ function AboutPage() {
             <div className="cs-service-card">
               <div className="cs-service-icon">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/tools.svg" 
+                  src="/bulb.svg" 
                   alt="Utilities & Systems" 
                   width="40"
                   height="40"
@@ -155,7 +155,7 @@ function AboutPage() {
             <div className="cs-service-card">
               <div className="cs-service-icon">
                 <img 
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/water-drop.svg" 
+                  src="/bulb.svg" 
                   alt="Water Treatment" 
                   width="40"
                   height="40"
