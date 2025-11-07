@@ -43,7 +43,7 @@ No. 305025102907Q), recognized as one of the most reliable service providers in 
 & Maintenance (O&M) and Erection & Commissioning of industrial and power plant systems.
             </p>
             <p className="cs-text">
-              We specialize in the O&M of Thermal, Solar, Biomass, and Multi-Fuel Power Plants; Process 
+              We specialize in the O&M of Thermal Power Plant, Distillation, Solar, Biomass, and Multi-Fuel Power Plants; Process 
 Boilers and Utilities such as Thermopack, Thermosyphon, Chillers, Nitrogen, Hydrogen, and 
 Ammonia Plants. Our expertise also extends to Distilleries, Sugar, Dairy, Chemical, and Food 
 Processing Plants, as well as Steel, DRI, Cement, Textile, Paper, and Edible Oil Industries.
