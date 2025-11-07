@@ -11,6 +11,7 @@ function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/services', label: 'Services' },
+    { href: '/clients', label: 'Clients' },
     { href: '/distillation', label: 'Distillation Process' },
     { href: '/contact', label: 'Contact Us' },
   ];
