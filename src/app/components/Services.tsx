@@ -42,42 +42,42 @@ function Services() {
       id: 1,
       title: 'Operation & Maintenance',
       description:
-        'Power plant (Thermal, Solar, Biomass, Multi Fuel), Process Boiler, Distilleries, Steam Turbine, Gas Turbine, Hydro Turbine, Chiller Plant, Nitrogen Plant, Hydrogen Plant, Ammonia Plant, Compressors, Cooling Tower, Edible Refinery, Paper Plant, Chemical Plant, Milk Processing, Food Processing, Textile, Steel Rolling Mill, SMS, DRI, Cement Plant, and all types of Water Treatment Plants.',
+        'Power plant (Thermal, Solar, Biomass, Multi Fuel), Process Boiler, Distilleries, Steam Turbine, Gas Turbine, Hydro Turbine, Chiller Plant, Nitrogen Plant, Hydrogen Plant, Ammonia Plant, Compressors, Cooling Tower, Edible Refinery, Paper Plant, Chemical Plant, Milk Processing, Food Processing, Textile, Steel Rolling Mill, SMS, DRI, Cement Plant, and all types of Water Treatment Plants. We also offer O&M for Solar Power Plants, Biomass, and Multi-Fuel Systems, ensuring energy efficiency and optimized fuel management.',
       icon: <GearWrenchIcon />,
     },
     {
       id: 2,
       title: 'Engineering & Consultancy',
       description:
-        'Powered by experienced engineers, we provide consulting for Boiler & Turbine O&M, planning and execution of industrial projects: Turbine/Boiler/ESP/CHP/RO+DM plant/Chimney/BOP and allied utilities (from feasibility to commissioning).',
+        'Powered by experienced engineers, we provide consulting for Boiler & Turbine O&M, planning and execution of industrial projects: Turbine/Boiler/ESP/CHP/RO+DM plant/Chimney/BOP and allied utilities (from feasibility to commissioning). Our team also provides Full Distillery Solutions including Design, Engineering, Supply, and Utilities Optimization (reducing steam consumption). We specialize in Reverse Engineering of Steam Turbine components and complete system modernization. ',
       icon: <CompassDraftIcon />,
     },
     {
       id: 3,
       title: 'Project Services',
       description:
-        'Turnkey/EPC; erection of Steam Turbine, Boiler, ESP, Rotary Air Pre-heater, HRSG, Coal Handling, Process Conveyors, Ash Handling (pneumatic), Silos, MS Structures, Piping, Cooling Towers, Utilities and Industrial Equipment.',
+        'Turnkey/EPC; erection of Steam Turbine, Boiler, ESP, Rotary Air Pre-heater, HRSG, Coal Handling, Process Conveyors, Ash Handling (pneumatic), Silos, MS Structures, Piping, Cooling Towers, Utilities and Industrial Equipment. We undertake complete turnkey (EPC) execution for distillery, power, and process plant utilities—from concept to commissioning.',
       icon: <CraneHookIcon />,
     },
     {
       id: 4,
       title: 'Annual Maintenance',
       description:
-        'Planned maintenance for Power Plants, Boilers, ESP, Steam Turbines, Cooling Towers, Edible Refinery, Paper & Chemical Plants, Milk/Food Processing, Textile, Steel Rolling, SMS, DRI, Cement, DM/RO, STP, ETP, PT, etc.',
+        'Planned maintenance for Power Plants, Boilers, ESP, Steam Turbines, Cooling Towers, Edible Refinery, Paper & Chemical Plants, Milk/Food Processing, Textile, Steel Rolling, SMS, DRI, Cement, DM/RO, STP, ETP, PT, etc. We manage annual maintenance contracts (AMC) for Mechanical, Electrical, and Instrumentation systems with preventive and predictive maintenance planning.',
       icon: <CalendarCheckIcon />,
     },
     {
       id: 5,
       title: 'Breakdown & Overhauling',
       description:
-        'Steam Turbines, Boiler auxiliaries (ID/FD/PA fans), feed pumps, centrifugal pumps, fuel handling systems; corrective and breakdown services for AFBC boilers, ESPs, and assorted industrial machinery.',
+        'Steam Turbines, Boiler auxiliaries (ID/FD/PA fans), feed pumps, centrifugal pumps, fuel handling systems; corrective and breakdown services for AFBC boilers, ESPs, and assorted industrial machinery. We also handle turbine overhauling, fuel system optimization, and shutdown management to minimize downtime.',
       icon: <WrenchHammerIcon />,
     },
     {
       id: 6,
       title: 'Spares',
       description:
-        'For Triveni, Siemens, Maxwatt, Belliss, HTC, BHEL, Kessels, etc. Non-IBR spares for AFBC/Travelling Grate/CFBC: thermowells, RTDs, pressure switches/gauges, level switches, manometers, ESP insulators, air/coal nozzles, rotary airlock valves, coal feeders, and coal crushing plant spares.',
+        'For Triveni, Siemens, Maxwatt, Belliss, HTC, BHEL, Kessels, etc. Non-IBR spares for AFBC/Travelling Grate/CFBC: thermowells, RTDs, pressure switches/gauges, level switches, manometers, ESP insulators, air/coal nozzles, rotary airlock valves, coal feeders, and coal crushing plant spares. We provide Reverse Engineered Spares for Turbines, Condensers, and Industrial Utilities to ensure quick replacement and reduced lead times.',
       icon: <BoxCogIcon />,
     },
   ];
@@ -113,7 +113,7 @@ function Services() {
                 <h3 className="cs-card-title">{service.title}</h3>
                 <p className="cs-card-description">{service.description}</p>
                 <div className="cs-card-hover">
-                  <span className="cs-learn-more">Learn More</span>
+                  <span className="cs-learn-more"><a href="/services">Learn More</a></span>
                   <span className="cs-arrow" aria-hidden="true">
                     →
                   </span>
