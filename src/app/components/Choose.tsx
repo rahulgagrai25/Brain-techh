@@ -9,20 +9,20 @@ function Choose() {
       { src: "https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1296", size: "large", alt: "Construction worker" },
       { src: "/f1.jpg", size: "medium", alt: "Construction site" },
       { src: "/f2.jpg", size: "medium", alt: "Industrial work" },
-      { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "small", alt: "Technical work" },
-      { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "small", alt: "Engineering work" }
+      { src: "https://images.unsplash.com/photo-1740346125849-a0367efd9590?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", size: "small", alt: "Technical work" },
+      { src: "https://plus.unsplash.com/premium_photo-1661899192117-f0139efddb1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", size: "small", alt: "Engineering work" }
     ],
     [
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "large", alt: "Power plant" },
-      { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "medium", alt: "Industrial maintenance" },
-      { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "medium", alt: "Technical engineering" },
+      { src: "https://images.unsplash.com/photo-1688694554481-353762e2c905?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1113", size: "large", alt: "Power plant" },
+      { src: "https://images.unsplash.com/photo-1611581372056-30cf28a7bd2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074", size: "medium", alt: "Industrial maintenance" },
+      { src: "https://plus.unsplash.com/premium_photo-1661899192117-f0139efddb1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", size: "medium", alt: "Technical engineering" },
       { src: "/f1.jpg", size: "small", alt: "Construction project" },
       { src: "/f2.jpg", size: "small", alt: "Building work" }
     ],
     [
-      { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "large", alt: "Industrial equipment" },
+      { src: "https://images.unsplash.com/photo-1611581372056-30cf28a7bd2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074", size: "large", alt: "Industrial equipment" },
       { src: "https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1296", size: "medium", alt: "Expert team" },
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", size: "medium", alt: "Power systems" },
+      { src: "https://plus.unsplash.com/premium_photo-1661899192117-f0139efddb1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170", size: "medium", alt: "Power systems" },
       { src: "/f1.jpg", size: "small", alt: "Site work" },
       { src: "/f2.jpg", size: "small", alt: "Project completion" }
     ]
@@ -510,10 +510,9 @@ function Choose() {
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Experienced Team</h3>
+                  <h3 className="cs-advantage-title">Expert Team</h3>
                   <p className="cs-advantage-text">
-                    Our engineers, technicians, and experts bring 30+ years of experience 
-in handling complex operations and maintenance tasks.
+                    Our team of expert engineers and technicians always delivers 100% output in all our services.
                   </p>
                 </div>
               </li>
@@ -529,10 +528,9 @@ in handling complex operations and maintenance tasks.
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Comprehensive Services</h3>
+                  <h3 className="cs-advantage-title">Integrity & Quality</h3>
                   <p className="cs-advantage-text">
-                    From design to maintenance, we offer end-to-end support for 
-power plants, industrial systems, and utilities.
+                    Integrity and fair workmanship in all matter. Quality Control and Quality assurance.
                   </p>
                 </div>
               </li>
@@ -548,10 +546,9 @@ power plants, industrial systems, and utilities.
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Proven Track Record</h3>
+                  <h3 className="cs-advantage-title">Large Scale Projects</h3>
                   <p className="cs-advantage-text">
-                    We’ve successfully managed projects for Thermal Power Plants, 
-Distilleries, and more, ensuring maximum efficiency and minimal downtime.
+                    Capable to undertake even the bulkiest erection and commissioning project to be accomplished.
                   </p>
                 </div>
               </li>
@@ -567,10 +564,9 @@ Distilleries, and more, ensuring maximum efficiency and minimal downtime.
                   />
                 </div>
                 <div className="cs-text-content">
-                  <h3 className="cs-advantage-title">Client-Centric Approach</h3>
+                  <h3 className="cs-advantage-title">Fast Response</h3>
                   <p className="cs-advantage-text">
-                    We strive to meet and exceed client expectations with 
-innovative solutions and cost-effective services.
+                    Fast response, Customer service / Call service / Manpower arrangement. Prompt and Efficient services.
                   </p>
                 </div>
               </li>
