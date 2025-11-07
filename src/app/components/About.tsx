@@ -38,15 +38,28 @@ function About() {
             <span className="cs-topper">About Us</span>
             <h2 className="cs-title">About Braintechh Engineers</h2>
             <p className="cs-text">
-              We are Best service providers for power plant maintenance services, preventive & break down maintenance, 
-              corrective maintenance, erection & over hauling jobs and all associated auxiliary machinery of thermal 
-              power plants & combined cycle to power plants, including DM plants & water softening plants.
+               Braintechh Engineers Private Limited is an ISO 9001:2015 certified company (Certificate 
+No. 305025102907Q), recognized as one of the most reliable service providers in Operation 
+& Maintenance (O&M) and Erection & Commissioning of industrial and power plant systems.
             </p>
             <p className="cs-text">
-              We also undertakes shut downs and annual maintenance of power and industrial boilers. With years of 
-              expertise in the field, we ensure reliable and efficient solutions for all your power plant needs.
+              We specialize in the O&M of Thermal, Solar, Biomass, and Multi-Fuel Power Plants; Process 
+Boilers and Utilities such as Thermopack, Thermosyphon, Chillers, Nitrogen, Hydrogen, and 
+Ammonia Plants. Our expertise also extends to Distilleries, Sugar, Dairy, Chemical, and Food 
+Processing Plants, as well as Steel, DRI, Cement, Textile, Paper, and Edible Oil Industries.
             </p>
-            <a href="#contact-us" className="cs-button-solid">
+            <p className="cs-text">
+              Our scope covers complete water treatment solutions—including chemical supply, DM and 
+softening plants, and advanced RO systems—along with mechanical and process equipment 
+erection, turbine overhauling, annual maintenance, and shutdown jobs.
+            </p>
+            <p className="cs-text">
+              With a team of experienced engineers and technicians, we deliver efficient, safe, and cost
+effective services that ensure maximum plant performance and minimal downtime. Our 
+commitment to innovation, quality, and customer satisfaction makes Braintechh Engineers 
+a trusted name across India’s power and process industries.
+            </p>
+            <a href="/about" className="cs-button-solid">
               Read More
               <img 
                 className="cs-button-arrow" 
