@@ -1,50 +1,23 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('#home');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['#home', '#about-us', '#services', '#distillation-process', '#contact-us'];
-      const scrollPosition = window.scrollY;
-
-      sections.forEach(section => {
-        const element = document.querySelector(section) as HTMLElement | null;
-        if (element) {
-          const offsetTop = element.offsetTop - 100;
-          const offsetBottom = offsetTop + element.offsetHeight;
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveLink(section);
-          }
-        }
-      });
-    };
-
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const pathname = usePathname();
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about-us', label: 'About Us' },
-    { href: '#services', label: 'Services' },
-    { href: '#distillation-process', label: 'Distillation Process' },
-    { href: '#contact-us', label: 'Contact Us' },
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About Us' },
+    { href: '/services', label: 'Services' },
+    { href: '/distillation', label: 'Distillation Process' },
+    { href: '/contact', label: 'Contact Us' },
   ];
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 font-roboto">
@@ -55,7 +28,7 @@ function Navbar() {
         ${isMenuOpen ? 'h-screen md:h-auto' : 'h-16 md:h-16'}
         overflow-hidden
       `}>
-        {/* Left section with logo - Background removed */}
+        {/* Left section with logo */}
         <div className="flex items-center justify-between md:justify-start h-16 md:h-16 flex-shrink-0">
           <div className="
             py-3 px-4
@@ -63,17 +36,18 @@ function Navbar() {
             group
           ">
             <div className="text-[#0070c0] flex items-center">
-              <a 
-                href="#home" 
+              <Link 
+                href="/" 
                 className="no-underline text-[#0070c0] hover:text-[#005a9e] flex items-center transition-all duration-300"
+                onClick={handleLinkClick}
               >
-                {/* Logo Image - Replace src with your actual logo path */}
+                {/* Logo Image */}
                 <img 
                   src="/logo.png" 
                   alt="Company Logo" 
                   className="h-7 w-auto transition-all duration-300 hover:scale-140"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -88,7 +62,7 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Navigation links - Hover line effect removed */}
+        {/* Navigation links */}
         <div className={`
           flex flex-col md:flex-row 
           md:ml-auto md:items-center
@@ -96,7 +70,7 @@ function Navbar() {
           ${isMenuOpen ? 'flex' : 'hidden md:flex'}
         `}>
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className={`
@@ -110,17 +84,17 @@ function Navbar() {
                 font-medium
                 text-sm
                 group
-                ${activeLink === link.href 
+                ${pathname === link.href 
                   ? 'text-white bg-gradient-to-r from-[#0070c0] to-[#005a9e] md:bg-gradient-to-r md:from-[#0070c0] md:to-[#005a9e] shadow-inner' 
                   : 'text-[#0070c0] hover:text-white hover:bg-gradient-to-r hover:from-[#0070c0] hover:to-[#005a9e] hover:shadow-lg'
                 }
               `}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={handleLinkClick}
             >
               <span className="md:transform md:skew-x-12 block transition-all duration-200">
                 {link.label}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
