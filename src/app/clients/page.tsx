@@ -66,21 +66,65 @@ function ClientsPage() {
         }
       ]
     },
+    // Edited
     {
-      category: "Operation and Maintenance Works - STEEL",
+      category: "Operation and Maintenance Works - DISTILLERIES",
       items: [
         {
-          name: "Shree Sidhbali Ispat Ltd",
-          location: "Tadali, Maharashtra 442406",
+          name: "Ankoor Distillery Private Limited",
+          location: "Village Jorsha & Teghoria, Tehsil Mejhia, District Bankura (West Bengal)",
           projects: [
-            "20 MW POWER PLANT with Air cooled Condenser, 10 x3 WHRB Boilers and 75TPH CFBC boiler, Operation and Maintenance with Full Utilities"
+            "Operation and Maintenance of 450 KLPD Grain Based Distillery Unit (Ethanol Production)"
           ]
         },
         {
-          name: "Bihar Sponge Iron Ltd (VSPL, A Unit of Adhunik Group)",
-          location: "Chandil, District- Sarai Kela, Jharkhand, Near Jamshedpur (Tata Nagar)",
+          name: "Shree Katyani Green Fuels Private Limited",
+          location: "Industrial Estate, Sahar Logate, Kathua- 184104, District - Kathua (J&K)",
           projects: [
-            "10 MW POWER PLANT, 5 x2 MW turbine and 40 TPH and 30 TPH AFBC boiler, Operation and Maintenance with Full Utilities"
+            "Operation and Maintenance of 250 KLPD Grain Based Distillery Unit (Ethanol Production)"
+          ]
+        },
+        {
+          name: "MAA SHEETLA VENTURES LIMITED",
+          location: "512 in village: Kashipur, Tehsil: Kiccha, District: Udham Singh Nagar, Uttarakhand",
+          projects: [
+            "Operation and Maintenance of 310 KLPD Grain Based Distillery Unit (Ethanol Production)"
+          ]
+        },
+        {
+          name: "Melker TTI Biofuels Limited",
+          location: "Beradwadi at Post Bhadgoan, Taluka- Gadhiglaj, Kolhapur MH 416502 IN",
+          projects: [
+            "Operation and Maintenance of 30 KLPD grain-based Distillery and 1 MW STG makes -Bellies, 12 TPH Boiler Make CVL, CHP, And Water Treatment Plant"
+          ]
+        },
+        {
+          name: "Gangamai Industries & Construction Ltd",
+          location: "Taluka Shevgaon, Dist. -414502, Najik Babhulgaon, Maharashtra",
+          projects: [
+            "4 MW Co- Generation power plant, 45 TPH Incineration Boiler"
+          ]
+        },
+        {
+          name: "ASHOK SAHAKARI SAKHAR KARKHANA LIMITED",
+          location: "Ashoknagar, village: Nipani Wadgaon, Tal. Shrirampur, Dist. Ahmednagar, Maharashtra 413717",
+          projects: [
+            "60 KLPD Distillery Unit, And Water Treatment Plant"
+          ]
+        },
+        {
+          name: "SHAMANUR SUGARS LIMITED (Distillery Division)",
+          location: "Duggavathi Village, Harapanahalli Taluk, Davanagere District, Karnataka",
+          projects: [
+            "Operation and Maintenance of 120 KLPD grain Based Distillery Unit"
+          ]
+        },
+        {
+          name: "Gulshan Polyol LIMITED",
+          location: "Dist -Goalpara, Assam",
+          projects: [
+            "Full power plant including Ro /DM, Electrical, Instrument and CHP also. 50 TPH AFBC BOILER MAKE- THERMOFAB (Fuel – Coal & Bambu)",
+            "6.25 MW Back Pressure TURBINE MAKES – Siemens"
           ]
         }
       ]
@@ -169,63 +213,20 @@ function ClientsPage() {
       ]
     },
     {
-      category: "Operation and Maintenance Works - DISTILLERIES",
+      category: "Operation and Maintenance Works - STEEL",
       items: [
         {
-          name: "Ankoor Distillery Private Limited",
-          location: "Village Jorsha & Teghoria, Tehsil Mejhia, District Bankura (West Bengal)",
+          name: "Shree Sidhbali Ispat Ltd",
+          location: "Tadali, Maharashtra 442406",
           projects: [
-            "Operation and Maintenance of 450 KLPD Grain Based Distillery Unit (Ethanol Production)"
+            "20 MW POWER PLANT with Air cooled Condenser, 10 x3 WHRB Boilers and 75TPH CFBC boiler, Operation and Maintenance with Full Utilities"
           ]
         },
         {
-          name: "Shree Katyani Green Fuels Private Limited",
-          location: "Industrial Estate, Sahar Logate, Kathua- 184104, District - Kathua (J&K)",
+          name: "Bihar Sponge Iron Ltd (VSPL, A Unit of Adhunik Group)",
+          location: "Chandil, District- Sarai Kela, Jharkhand, Near Jamshedpur (Tata Nagar)",
           projects: [
-            "Operation and Maintenance of 250 KLPD Grain Based Distillery Unit (Ethanol Production)"
-          ]
-        },
-        {
-          name: "MAA SHEETLA VENTURES LIMITED",
-          location: "512 in village: Kashipur, Tehsil: Kiccha, District: Udham Singh Nagar, Uttarakhand",
-          projects: [
-            "Operation and Maintenance of 310 KLPD Grain Based Distillery Unit (Ethanol Production)"
-          ]
-        },
-        {
-          name: "Melker TTI Biofuels Limited",
-          location: "Beradwadi at Post Bhadgoan, Taluka- Gadhiglaj, Kolhapur MH 416502 IN",
-          projects: [
-            "Operation and Maintenance of 30 KLPD grain-based Distillery and 1 MW STG makes -Bellies, 12 TPH Boiler Make CVL, CHP, And Water Treatment Plant"
-          ]
-        },
-        {
-          name: "Gangamai Industries & Construction Ltd",
-          location: "Taluka Shevgaon, Dist. -414502, Najik Babhulgaon, Maharashtra",
-          projects: [
-            "4 MW Co- Generation power plant, 45 TPH Incineration Boiler"
-          ]
-        },
-        {
-          name: "ASHOK SAHAKARI SAKHAR KARKHANA LIMITED",
-          location: "Ashoknagar, village: Nipani Wadgaon, Tal. Shrirampur, Dist. Ahmednagar, Maharashtra 413717",
-          projects: [
-            "60 KLPD Distillery Unit, And Water Treatment Plant"
-          ]
-        },
-        {
-          name: "SHAMANUR SUGARS LIMITED (Distillery Division)",
-          location: "Duggavathi Village, Harapanahalli Taluk, Davanagere District, Karnataka",
-          projects: [
-            "Operation and Maintenance of 120 KLPD grain Based Distillery Unit"
-          ]
-        },
-        {
-          name: "Gulshan Polyol LIMITED",
-          location: "Dist -Goalpara, Assam",
-          projects: [
-            "Full power plant including Ro /DM, Electrical, Instrument and CHP also. 50 TPH AFBC BOILER MAKE- THERMOFAB (Fuel – Coal & Bambu)",
-            "6.25 MW Back Pressure TURBINE MAKES – Siemens"
+            "10 MW POWER PLANT, 5 x2 MW turbine and 40 TPH and 30 TPH AFBC boiler, Operation and Maintenance with Full Utilities"
           ]
         }
       ]
