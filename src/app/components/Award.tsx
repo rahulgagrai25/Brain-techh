@@ -5,14 +5,14 @@ function Award() {
   const awards = [
     {
       id: 1,
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQFFI3PWMlwPqg/feedshare-shrink_1280/B4DZc7E5YlG8Ao-/0/1749042830290?e=1764201600&v=beta&t=hky53cPbNll2iDIQ18kQ3KtGaaNsrT98Yb-2YZSo--4",
+      image: "/awards/a1.png",
       title: "Award in Biofuel Sector",
       subtitle: "by Delhi Cabinet Minister",
       description: "Recognized for outstanding contributions and innovations in the biofuel sector, showcasing our commitment to sustainable energy solutions."
     },
     {
       id: 2,
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQELTV1c8Umc3A/feedshare-shrink_1280/B4DZnJ19m6JUAs-/0/1760027992583?e=1764201600&v=beta&t=ETCIM5x35sB3YHASq4NDRfEm5WsxFMLAGDSRwnzPiKo",
+      image: "/awards/a2.png",
       title: "Recognition by Uttarakhand CM",
       subtitle: "Pushkar Singh Dhami for Engineering Innovation & Employment Creation",
       description: "Honored for exceptional engineering innovations and significant contributions to employment generation in the state of Uttarakhand."
