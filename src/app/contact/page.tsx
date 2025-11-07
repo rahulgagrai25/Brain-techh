@@ -85,22 +85,6 @@ function ContactPage() {
                     </p>
                   </div>
                 </div>
-
-                {/* <div className="cs-contact-item">
-                  <div className="cs-contact-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0070c0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M12 6V12L16 14" stroke="#0070c0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                  <div className="cs-contact-content">
-                    <h3 className="cs-contact-title">Business Hours</h3>
-                    <p className="cs-contact-text">
-                      Monday - Saturday: 9:00 AM - 6:00 PM<br />
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div> */}
               </div>
             </div>
 
@@ -192,8 +176,6 @@ function ContactPage() {
         </div>
       </section>
 
-      
-
       <style jsx>{`
         /* Global Variables - Matching Your Style */
         .cs-section {
@@ -211,51 +193,67 @@ function ContactPage() {
           max-width: 80rem;
           margin: 0 auto;
           padding: 0 1rem;
+          box-sizing: border-box;
         }
 
-        /* Hero Section */
+        /* Hero Section - Mobile First */
         .cs-hero {
-          padding: 5rem 1rem;
+          padding: 3rem 1rem;
           background: linear-gradient(rgba(244, 244, 244, 0.8), rgba(244, 244, 244, 0.6)),
                       url('/f1.jpg') center/cover no-repeat;
           text-align: center;
+          min-height: 40vh;
+          display: flex;
+          align-items: center;
+        }
+
+        @media (min-width: 768px) {
+          .cs-hero {
+            padding: 5rem 1rem;
+            min-height: 50vh;
+          }
         }
 
         .cs-hero-content {
           max-width: 48rem;
           margin: 0 auto;
+          width: 100%;
         }
 
         .cs-hero-title {
-          font-size: clamp(2rem, 4vw, 3.5rem);
+          font-size: clamp(1.75rem, 5vw, 3.5rem);
           font-weight: 900;
           line-height: 1.15;
           margin: 0.5rem 0 1rem 0;
           color: var(--headerColor);
           letter-spacing: 0.01em;
+          word-wrap: break-word;
         }
 
         .cs-hero-text {
-          font-size: clamp(1.1rem, 2vw, 1.25rem);
-          line-height: 1.75;
+          font-size: clamp(1rem, 2.5vw, 1.25rem);
+          line-height: 1.6;
           margin: 0 0 1.5rem 0;
           color: var(--bodyTextColor);
           opacity: 0.9;
+          padding: 0 0.5rem;
         }
 
         /* Main Contact Section */
         .cs-section {
           padding: var(--sectionPadding);
           background: #ffffff;
+          box-sizing: border-box;
         }
 
         .cs-contact-grid {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 3rem;
+          gap: 2.5rem;
+          width: 100%;
         }
 
-        @media (min-width: 48rem) {
+        @media (min-width: 768px) {
           .cs-contact-grid {
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -293,6 +291,7 @@ function ContactPage() {
           margin: 0.5rem 0 1rem 0;
           color: var(--headerColor);
           letter-spacing: 0.01em;
+          word-wrap: break-word;
         }
 
         .cs-highlight {
@@ -307,22 +306,38 @@ function ContactPage() {
           opacity: 0.9;
         }
 
-        /* Contact Details */
+        /* Contact Details - Mobile Optimized */
         .cs-contact-details {
           display: flex;
           flex-direction: column;
-          gap: 2rem;
+          gap: 1.5rem;
           margin-top: 2rem;
         }
 
         .cs-contact-item {
           display: flex;
+          flex-direction: column;
           align-items: flex-start;
           gap: 1rem;
-          padding: 1.5rem;
+          padding: 1.25rem;
           background: #f8fafc;
           border: 1px solid #e2e8f0;
           transition: all 0.3s ease;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        @media (min-width: 480px) {
+          .cs-contact-item {
+            flex-direction: row;
+            align-items: flex-start;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .cs-contact-item {
+            padding: 1.5rem;
+          }
         }
 
         .cs-contact-item:hover {
@@ -340,9 +355,12 @@ function ContactPage() {
           justify-content: center;
           flex-shrink: 0;
           transition: all 0.3s ease;
+          border-radius: 4px;
         }
 
-        
+        .cs-contact-item:hover .cs-contact-icon {
+          background: var(--primary);
+        }
 
         .cs-contact-icon svg {
           transition: all 0.3s ease;
@@ -354,6 +372,7 @@ function ContactPage() {
 
         .cs-contact-content {
           flex: 1;
+          width: 100%;
         }
 
         .cs-contact-title {
@@ -369,29 +388,34 @@ function ContactPage() {
           color: var(--bodyTextColor);
           margin: 0;
           opacity: 0.9;
+          word-wrap: break-word;
         }
 
         .cs-contact-link {
           color: var(--primary);
           text-decoration: none;
           transition: color 0.3s ease;
+          display: inline-block;
+          padding: 0.125rem 0;
         }
 
         .cs-contact-link:hover {
           color: var(--secondary);
         }
 
-        /* Contact Form */
+        /* Contact Form - Mobile Optimized */
         .cs-form {
           display: flex;
           flex-direction: column;
-          gap: 1.5rem;
+          gap: 1.25rem;
+          width: 100%;
         }
 
         .cs-form-group {
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
+          width: 100%;
         }
 
         .cs-form-label {
@@ -406,9 +430,21 @@ function ContactPage() {
           padding: 0.875rem 1rem;
           border: 1px solid #e2e8f0;
           background: #ffffff;
-          font-size: 0.95rem;
+          font-size: 1rem;
           transition: all 0.3s ease;
           width: 100%;
+          box-sizing: border-box;
+          border-radius: 4px;
+          -webkit-appearance: none;
+          min-height: 48px;
+        }
+
+        @media (min-width: 768px) {
+          .cs-form-input,
+          .cs-form-select,
+          .cs-form-textarea {
+            font-size: 0.95rem;
+          }
         }
 
         .cs-form-input:focus,
@@ -438,6 +474,16 @@ function ContactPage() {
           cursor: pointer;
           transition: all 0.3s ease;
           margin-top: 1rem;
+          width: 100%;
+          border-radius: 4px;
+          min-height: 56px;
+        }
+
+        @media (min-width: 480px) {
+          .cs-form-button {
+            width: auto;
+            align-self: flex-start;
+          }
         }
 
         .cs-form-button:hover {
@@ -459,18 +505,27 @@ function ContactPage() {
 
         .cs-areas-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
           gap: 1.5rem;
+          width: 100%;
         }
 
         .cs-area-card {
           background: #ffffff;
           border: 1px solid #e2e8f0;
-          padding: 2rem 1.5rem;
+          padding: 1.5rem;
           text-align: center;
           transition: all 0.3s ease;
           position: relative;
           overflow: hidden;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        @media (min-width: 768px) {
+          .cs-area-card {
+            padding: 2rem 1.5rem;
+          }
         }
 
         .cs-area-card:hover {
@@ -510,6 +565,21 @@ function ContactPage() {
           opacity: 0.9;
         }
 
+        /* Touch device optimizations */
+        @media (hover: none) {
+          .cs-contact-item:hover,
+          .cs-form-button:hover,
+          .cs-area-card:hover {
+            transform: none;
+          }
+          
+          .cs-contact-item:active,
+          .cs-form-button:active,
+          .cs-area-card:active {
+            transform: scale(0.98);
+          }
+        }
+
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
           .cs-contact-item,
@@ -523,6 +593,25 @@ function ContactPage() {
           .cs-form-button:hover,
           .cs-area-card:hover {
             transform: none;
+          }
+        }
+
+        /* Very small screens */
+        @media (max-width: 360px) {
+          .cs-container {
+            padding: 0 0.75rem;
+          }
+          
+          .cs-hero {
+            padding: 2rem 0.75rem;
+          }
+          
+          .cs-section {
+            padding: 2rem 0.75rem;
+          }
+          
+          .cs-contact-item {
+            padding: 1rem;
           }
         }
       `}</style>
