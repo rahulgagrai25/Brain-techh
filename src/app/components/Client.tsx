@@ -79,7 +79,7 @@ function Client() {
 
               {/* View More Button */}
               <div className="cs-button-container">
-                <a href="#" className="cs-button-solid">
+                <a href="/clients" className="cs-button-solid">
                   View More Clients
                 </a>
               </div>
