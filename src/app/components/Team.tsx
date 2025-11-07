@@ -72,7 +72,7 @@ function Team() {
     {
       name: "Mr. D.P. Singh",
       designation: "General Manager Sugar",
-      qualification: "Sugar tech. 1990",
+      qualification: "B. Tech. 1990",
       experience: "40 + Year Exp. in Sugar Industries"
     },
     {
@@ -82,10 +82,10 @@ function Team() {
       experience: "20+ Year Exp."
     },
     {
-      name: "Mr. Parveen Nara",
-      designation: "Manager Digital Marketing",
+      name: "Mr. Hemant Saini",
+      designation: "Technology Advisor",
       qualification: "",
-      experience: "15+ Year Exp."
+      experience: "3+ Year Exp."
     },
     {
       name: "Gagan Tomar",
