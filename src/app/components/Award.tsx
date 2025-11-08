@@ -12,7 +12,7 @@ function Award() {
     },
     {
       id: 2,
-      image: "/awards/a2.png",
+      image: "/awards/a3.jpg",
       title: "Recognition by Uttarakhand CM",
       subtitle: "Pushkar Singh Dhami for Engineering Innovation & Employment Creation",
       description: "Honored for exceptional engineering innovations and significant contributions to employment generation in the state of Uttarakhand."
