@@ -1,8 +1,10 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 
 function Award() {
-  const awards = [
+  const [visibleCount, setVisibleCount] = useState(2);
+
+  const allAwards = [
     {
       id: 1,
       image: "/awards/a1.png",
@@ -16,8 +18,33 @@ function Award() {
       title: "Recognition by Uttarakhand CM",
       subtitle: "Pushkar Singh Dhami for Engineering Innovation & Employment Creation",
       description: "Honored for exceptional engineering innovations and significant contributions to employment generation in the state of Uttarakhand."
+    },
+    {
+      id: 3,
+      image: "/awards/a4.png",
+      title: "Best Technology Provider in the Biofuel Sector",
+      subtitle: "by Green Society of India & IES",
+      description: "Recognized for excellence in biofuel innovation and leadership in advancing India’s renewable energy ecosystem."
+    },
+    {
+      id: 4,
+      image: "/awards/a2.png",
+      title: "Amar Ujala MSME for Bharat Awards 2025",
+      subtitle: "by Amar Ujala Group",
+      description: "Awarded for driving employment opportunities and pioneering engineering solutions that power India’s industrial progress."
     }
   ];
+
+  const visibleAwards = allAwards.slice(0, visibleCount);
+  const hasMoreAwards = visibleCount < allAwards.length;
+
+  const loadMoreAwards = () => {
+    setVisibleCount(prevCount => prevCount + 2);
+  };
+
+  const showLessAwards = () => {
+    setVisibleCount(2);
+  };
 
   return (
     <>
@@ -34,7 +61,7 @@ function Award() {
           </div>
 
           <div className="cs-awards-grid">
-            {awards.map((award) => (
+            {visibleAwards.map((award) => (
               <div key={award.id} className="cs-award-card">
                 <div className="cs-award-image-container">
                   <img 
@@ -72,10 +99,38 @@ function Award() {
             ))}
           </div>
 
+          {/* Accordion Button */}
+          {allAwards.length > 2 && (
+            <div className="cs-accordion-container">
+              <button 
+                className="cs-accordion-button"
+                onClick={hasMoreAwards ? loadMoreAwards : showLessAwards}
+                aria-expanded={!hasMoreAwards}
+              >
+                {hasMoreAwards ? 'See More Awards' : 'Show Less Awards'}
+                <svg 
+                  className={`cs-accordion-arrow ${hasMoreAwards ? 'cs-arrow-down' : 'cs-arrow-up'}`}
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 20 20" 
+                  fill="none"
+                >
+                  <path 
+                    d="M5 7.5L10 12.5L15 7.5" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          )}
+
           {/* Stats Section */}
           <div className="cs-awards-stats">
             <div className="cs-stat-item">
-              <div className="cs-stat-number">2+</div>
+              <div className="cs-stat-number">4+</div>
               <div className="cs-stat-label">National Awards</div>
             </div>
             <div className="cs-stat-item">
@@ -188,6 +243,7 @@ function Award() {
           transition: all 0.3s ease;
           position: relative;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+          animation: fadeInUp 0.5s ease-out;
         }
 
         .cs-award-card:hover {
@@ -321,6 +377,71 @@ function Award() {
           opacity: 0.8;
         }
 
+        /* Accordion Button */
+        .cs-accordion-container {
+          display: flex;
+          justify-content: center;
+          margin: 2rem 0;
+        }
+
+        .cs-accordion-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1rem 2rem;
+          background: transparent;
+          color: var(--primary);
+          border: 2px solid var(--primary);
+          font-weight: 600;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cs-accordion-button:hover {
+          background: var(--primary);
+          color: #ffffff;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(0, 112, 192, 0.25);
+        }
+
+        .cs-accordion-button:active {
+          transform: translateY(0);
+        }
+
+        .cs-accordion-arrow {
+          transition: transform 0.3s ease;
+        }
+
+        .cs-arrow-down {
+          transform: rotate(0deg);
+        }
+
+        .cs-arrow-up {
+          transform: rotate(180deg);
+        }
+
+        .cs-accordion-button::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0;
+          height: 0;
+          background: var(--primary);
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+
+        .cs-accordion-button:hover::before {
+          width: 300px;
+          height: 300px;
+        }
+
         /* Awards Stats */
         .cs-awards-stats {
           display: grid;
@@ -368,13 +489,27 @@ function Award() {
           letter-spacing: 0.05em;
         }
 
+        /* Animation for new cards */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
           .cs-award-card,
           .cs-award-image,
           .cs-award-overlay,
           .cs-award-badge,
-          .cs-stat-item {
+          .cs-stat-item,
+          .cs-accordion-button,
+          .cs-accordion-arrow {
             transition: none;
           }
           
@@ -383,6 +518,10 @@ function Award() {
           }
           
           .cs-stat-item:hover {
+            transform: none;
+          }
+
+          .cs-accordion-button:hover {
             transform: none;
           }
         }
