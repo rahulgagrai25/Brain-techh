@@ -1,5 +1,5 @@
-'use client'
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 function Certificates() {
   const [selectedCertificate, setSelectedCertificate] = useState<any>(null);
@@ -8,13 +8,14 @@ function Certificates() {
   const certificates = [
     {
       id: 1,
-      title: "CERTIFICATE OF RECOGNITION - DPIIT #StartupIndia",
-      description: "Startup India Recognition Certificate awarded by DPIIT, acknowledging our commitment to innovation and growth in Green Technology and Industrial Services.",
-      image: "certificate/c1.png",
+      title: "Certificate of Recognition - DPIIT Startup India",
+      description:
+        "Startup India Recognition Certificate awarded by DPIIT, acknowledging our commitment to innovation and growth in Green Technology and Industrial Services.",
+      image: "/certificate/c1.png",
       issuedBy: "Department for Promotion of Industry and Internal Trade (DPIIT)",
       date: "02/10/2025",
-      certificateNo: "DIPP224016"
-    }
+      certificateNo: "DIPP224016",
+    },
   ];
 
   const openModal = (certificate: any) => {
@@ -39,9 +40,11 @@ function Certificates() {
             <span className="cs-topper">Our Certifications</span>
             <h2 className="cs-title">Quality & Excellence Recognized</h2>
             <p className="cs-text">
-              Braintechh Engineers is proud to hold numerous certifications and awards that demonstrate 
-              our commitment to quality, safety, and excellence in engineering services. Our certifications 
-              validate our dedication to maintaining the highest standards across all our operations.
+              Braintechh Engineers is proud to hold numerous certifications and
+              awards that demonstrate our commitment to quality, safety, and
+              excellence in engineering services. Our certifications validate
+              our dedication to maintaining the highest standards across all our
+              operations.
             </p>
           </div>
 
@@ -49,15 +52,15 @@ function Certificates() {
             {certificates.map((certificate) => (
               <div key={certificate.id} className="cs-certificate-item">
                 <div className="cs-image">
-                  <img 
-                    src={certificate.image} 
+                  <img
+                    src={certificate.image}
                     alt={certificate.title}
                     width="400"
                     height="300"
                     decoding="async"
                   />
                   <div className="cs-overlay">
-                    <button 
+                    <button
                       className="cs-view-button"
                       onClick={() => openModal(certificate)}
                     >
@@ -71,15 +74,21 @@ function Certificates() {
                   <div className="cs-details">
                     <div className="cs-detail-item">
                       <span className="cs-detail-label">Issued By:</span>
-                      <span className="cs-detail-value">{certificate.issuedBy}</span>
+                      <span className="cs-detail-value">
+                        {certificate.issuedBy}
+                      </span>
                     </div>
                     <div className="cs-detail-item">
                       <span className="cs-detail-label">Date:</span>
-                      <span className="cs-detail-value">{certificate.date}</span>
+                      <span className="cs-detail-value">
+                        {certificate.date}
+                      </span>
                     </div>
                     <div className="cs-detail-item">
                       <span className="cs-detail-label">Certificate No:</span>
-                      <span className="cs-detail-value">{certificate.certificateNo}</span>
+                      <span className="cs-detail-value">
+                        {certificate.certificateNo}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -89,18 +98,27 @@ function Certificates() {
         </div>
 
         {/* Certificate Modal */}
-        <div className={`cs-certificate-modal ${isModalOpen ? 'active' : ''}`}>
+        <div className={`cs-certificate-modal ${isModalOpen ? "active" : ""}`}>
           <div className="cs-modal-content">
             <button className="cs-modal-close" onClick={closeModal}>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="black">
-                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
               </svg>
             </button>
             {selectedCertificate && (
               <>
-                <div className="cs-certificate-badge">{selectedCertificate.certificateNo}</div>
-                <img 
-                  src={selectedCertificate.image} 
+                {/* <div className="cs-certificate-badge">{selectedCertificate.certificateNo}</div> */}
+                <img
+                  src={selectedCertificate.image}
                   alt={selectedCertificate.title}
                   className="cs-modal-image"
                 />
@@ -115,7 +133,8 @@ function Certificates() {
                       <strong>Date:</strong> {selectedCertificate.date}
                     </div>
                     <div className="cs-modal-detail">
-                      <strong>Certificate No:</strong> {selectedCertificate.certificateNo}
+                      <strong>Certificate No:</strong>{" "}
+                      {selectedCertificate.certificateNo}
                     </div>
                   </div>
                 </div>
@@ -171,7 +190,7 @@ function Certificates() {
         }
 
         #certificates .cs-title:after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -0.5rem;
           left: 50%;
@@ -364,7 +383,7 @@ function Certificates() {
           top: 1rem;
           right: 1rem;
           background: var(--primary);
-          color: #fff;
+          color: black;
           border: none;
           width: 2.5rem;
           height: 2.5rem;
@@ -378,7 +397,6 @@ function Certificates() {
         }
 
         #certificates .cs-modal-close:hover {
-          background: var(--secondary);
           transform: rotate(90deg);
         }
 
