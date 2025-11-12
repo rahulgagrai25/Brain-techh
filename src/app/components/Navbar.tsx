@@ -5,20 +5,38 @@ import { usePathname } from 'next/navigation';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const pathname = usePathname();
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
+    {
+      href: '/about',
+      label: 'About Us',
+      hasDropdown: true,
+      dropdownItems: [
+        { href: '/about', label: 'About' },
+        { href: '/certificates', label: 'Certificates' },
+        { href: '/awards', label: 'Awards' }
+      ]
+    },
     { href: '/services', label: 'Services' },
     { href: '/clients', label: 'Clients' },
     { href: '/distillation', label: 'Distillation Process' },
+    { href: '/gallery', label: 'Gallery' },
     { href: '/contact', label: 'Contact Us' },
   ];
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
+    setIsAboutDropdownOpen(false);
   };
+
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  };
+
+  const isAboutActive = pathname === '/about' || pathname === '/awards';
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 font-roboto">
@@ -26,8 +44,8 @@ function Navbar() {
         bg-gray-300 shadow-md
         flex flex-col md:flex-row
         transition-all duration-300 ease-in-out
-        ${isMenuOpen ? 'h-screen md:h-auto' : 'h-16 md:h-16'}
-        overflow-hidden
+        ${isMenuOpen ? 'max-h-screen md:max-h-16' : 'max-h-16'}
+        overflow-hidden md:overflow-visible
       `}>
         {/* Left section with logo */}
         <div className="flex items-center justify-between md:justify-start h-16 md:h-16 flex-shrink-0">
@@ -37,23 +55,23 @@ function Navbar() {
             group
           ">
             <div className="text-[#0070c0] flex items-center">
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 className="no-underline text-[#0070c0] hover:text-[#005a9e] flex items-center transition-all duration-300"
                 onClick={handleLinkClick}
               >
                 {/* Logo Image */}
-                <img 
-                  src="/logo.png" 
-                  alt="Company Logo" 
-                  className="h-7 w-auto transition-all duration-300 hover:scale-140"
+                <img
+                  src="/logo.png"
+                  alt="Company Logo"
+                  className="h-7 w-auto transition-all duration-300 hover:scale-105"
                 />
               </Link>
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <button 
+          <button
             className="md:hidden p-4 text-[#0070c0] hover:bg-gray-50 rounded-lg transition-all duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -65,37 +83,117 @@ function Navbar() {
 
         {/* Navigation links */}
         <div className={`
-          flex flex-col md:flex-row 
+          flex flex-col md:flex-row
           md:ml-auto md:items-center
           transition-all duration-300
           ${isMenuOpen ? 'flex' : 'hidden md:flex'}
+          w-full md:w-auto
         `}>
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`
-                relative
-                py-3 px-4
-                text-center
-                no-underline
-                transition-all duration-300 ease-out
-                border-t border-gray-100 md:border-t-0
-                transform md:-skew-x-12
-                font-medium
-                text-sm
-                group
-                ${pathname === link.href 
-                  ? 'text-white bg-gradient-to-r from-[#0070c0] to-[#005a9e] md:bg-gradient-to-r md:from-[#0070c0] md:to-[#005a9e] shadow-inner' 
-                  : 'text-[#0070c0] hover:text-white hover:bg-gradient-to-r hover:from-[#0070c0] hover:to-[#005a9e] hover:shadow-lg'
-                }
-              `}
-              onClick={handleLinkClick}
-            >
-              <span className="md:transform md:skew-x-12 block transition-all duration-200">
-                {link.label}
-              </span>
-            </Link>
+            <div key={link.href} className="relative">
+              {link.hasDropdown ? (
+                <>
+                  {/* Dropdown trigger for About Us */}
+                  <div className="relative">
+                    <button
+                      className={`
+                        relative
+                        w-full md:w-auto
+                        py-3 px-4
+                        text-center
+                        no-underline
+                        transition-all duration-300 ease-out
+                        border-t border-gray-100 md:border-t-0
+                        transform md:-skew-x-12
+                        font-medium
+                        text-sm
+                        group
+                        flex items-center justify-center md:justify-center
+                        ${isAboutActive
+                          ? 'justify-center text-white bg-gradient-to-r from-[#0070c0] to-[#005a9e] md:bg-gradient-to-r md:from-[#0070c0] md:to-[#005a9e] shadow-inner'
+                          : 'text-[#0070c0] hover:text-white hover:bg-gradient-to-r hover:from-[#0070c0] hover:to-[#005a9e] hover:shadow-lg'
+                        }
+                      `}
+                      onClick={toggleAboutDropdown}
+                    >
+                      <span className="md:transform md:skew-x-12 block transition-all duration-200">
+                        {link.label}
+                      </span>
+                      <svg
+                        className={`ml-2 h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+
+                    {/* Dropdown menu */}
+                    <div className={`
+                      ${isAboutDropdownOpen ? 'block' : 'hidden'}
+                      md:absolute md:top-full md:left-0
+                      w-full md:w-48
+                      bg-white
+                      shadow-lg
+                      rounded-b-lg md:rounded-lg
+                      overflow-hidden
+                      z-50
+                    `}>
+                      {link.dropdownItems.map((dropdownItem) => (
+                        <Link
+                          key={dropdownItem.href}
+                          href={dropdownItem.href}
+                          className={`
+                            block
+                            py-3 px-4
+                            no-underline
+                            transition-all duration-200
+                            border-b border-gray-100 last:border-b-0
+                            font-medium
+                            text-sm
+                            ${pathname === dropdownItem.href
+                              ? 'text-white bg-gradient-to-r from-[#0070c0] to-[#005a9e]'
+                              : 'text-[#0070c0] hover:text-white hover:bg-gradient-to-r hover:from-[#0070c0] hover:to-[#005a9e]'
+                            }
+                          `}
+                          onClick={handleLinkClick}
+                        >
+                          {dropdownItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              ) : (
+                /* Regular link */
+                <Link
+                  href={link.href}
+                  className={`
+                    relative
+                    py-3 px-4
+                    text-center
+                    no-underline
+                    transition-all duration-300 ease-out
+                    border-t border-gray-100 md:border-t-0
+                    transform md:-skew-x-12
+                    font-medium
+                    text-sm
+                    group
+                    block
+                    ${pathname === link.href
+                      ? 'text-white bg-gradient-to-r from-[#0070c0] to-[#005a9e] md:bg-gradient-to-r md:from-[#0070c0] md:to-[#005a9e] shadow-inner'
+                      : 'text-[#0070c0] hover:text-white hover:bg-gradient-to-r hover:from-[#0070c0] hover:to-[#005a9e] hover:shadow-lg'
+                    }
+                  `}
+                  onClick={handleLinkClick}
+                >
+                  <span className="md:transform md:skew-x-12 block transition-all duration-200">
+                    {link.label}
+                  </span>
+                </Link>
+              )}
+            </div>
           ))}
         </div>
       </nav>
