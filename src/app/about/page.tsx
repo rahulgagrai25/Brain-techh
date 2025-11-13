@@ -25,7 +25,7 @@ function AboutPage() {
         <div className="cs-container">
           <div className="cs-content-section">
             {/* <span className="cs-topper">About Our Company</span> */}
-            <h2 className="cs-title">Leading Industrial & Power Plant <span className="cs-highlight">Solutions</span></h2>
+            <h2 className="cs-title">Leading in Industries: <span className="cs-highlight">Power Plants, Distilleries, Sugar and Other Utilities</span></h2>
             
             <div className="cs-content-grid">
               <div className="cs-main-content">
