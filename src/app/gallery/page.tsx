@@ -9,76 +9,58 @@ function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1620203853151-496c7228306c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1296",
-      alt: "Power Plant Maintenance",
-      category: "maintenance",
-      title: "Thermal Power Plant O&M"
+      src: "/gallery/1.jpeg",
+      alt: "",
+      category: "projects",
+      title: ""
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      alt: "Industrial Equipment",
-      category: "equipment",
-      title: "Process Equipment Installation"
+      src: "/gallery/2.jpeg",
+      alt: "",
+      category: "projects",
+      title: ""
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      alt: "Turbine Overhauling",
-      category: "maintenance",
-      title: "Turbine Overhauling Services"
+      src: "/gallery/3.jpeg",
+      alt: "",
+      category: "projects",
+      title: ""
     },
     {
       id: 4,
-      src: "https://braintechh.com/wp-content/uploads/2021/11/istockphoto-181803397-612x612-1.jpg",
-      alt: "Engineering Team",
-      category: "team",
-      title: "Expert Engineering Team"
+      src: "/gallery/4.jpeg",
+      alt: "",
+      category: "projects",
+      title: ""
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1688694554481-353762e2c905?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1113",
-      alt: "Solar Power Plant",
+      src: "/gallery/5.jpeg",
+      alt: "",
       category: "projects",
-      title: "Solar Power Plant Commissioning"
+      title: ""
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1611581372056-30cf28a7bd2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
-      alt: "Industrial Maintenance",
-      category: "maintenance",
-      title: "Annual Maintenance Work"
-    },
-    {
-      id: 7,
-      src: "https://plus.unsplash.com/premium_photo-1661899192117-f0139efddb1e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-      alt: "Water Treatment",
-      category: "equipment",
-      title: "Water Treatment Solutions"
-    },
-    {
-      id: 8,
-      src: "https://cgu-odisha.ac.in/wp-content/uploads/2023/05/1_xqAM05_tfNP7VCcE0VAYzw-2048x1408-1.jpeg",
-      alt: "Technical Work",
-      category: "team",
-      title: "Technical Expertise"
-    },
-    {
-      id: 9,
-      src: "https://images.unsplash.com/photo-1740346125849-a0367efd9590?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-      alt: "Project Completion",
+      src: "/gallery/6.jpeg",
+      alt: "",
       category: "projects",
-      title: "Project Handover"
-    }
+      title: ""
+    },
+
   ];
 
   // Filter categories
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'maintenance', name: 'Maintenance' },
-    { id: 'equipment', name: 'Equipment' },
     { id: 'projects', name: 'Projects' },
-    { id: 'team', name: 'Our Team' }
+    // { id: 'all', name: 'All Projects' },
+    // { id: 'maintenance', name: 'Maintenance' },
+    // { id: 'equipment', name: 'Equipment' },
+    // { id: 'projects', name: 'Projects' },
+    // { id: 'team', name: 'Our Team' }
   ];
 
   // Filter images based on active category
