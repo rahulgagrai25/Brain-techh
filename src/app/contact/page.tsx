@@ -81,6 +81,9 @@ function ContactPage() {
                       </a><br/>
                       <a href="mailto:braintechengineers@yahoo.com" className="cs-contact-link">
                         braintechengineers@yahoo.com
+                      </a><br/>
+                      <a href="mailto:braintechengineers@yahoo.com" className="cs-contact-link">
+                        ho@braintechh.com
                       </a>
                     </p>
                   </div>
