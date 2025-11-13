@@ -78,16 +78,16 @@ a trusted name across India’s power and process industries.
               <picture>
                 <source 
                   media="(max-width: 600px)" 
-                  srcSet="https://braintechh.com/wp-content/uploads/2021/11/istockphoto-181803397-612x612-1.jpg" 
+                  srcSet="/about/a4.png" 
                 />
                 <source 
                   media="(min-width: 601px)" 
-                  srcSet="https://braintechh.com/wp-content/uploads/2021/11/istockphoto-181803397-612x612-1.jpg" 
+                  srcSet="/about/a4.png" 
                 />
                 <img 
                   aria-hidden="true" 
                   decoding="async" 
-                  src="https://braintechh.com/wp-content/uploads/2021/11/istockphoto-181803397-612x612-1.jpg" 
+                  src="/about/a4.png" 
                   alt="Braintechh Engineers team at power plant" 
                   width="400" 
                   height="300"
@@ -99,16 +99,16 @@ a trusted name across India’s power and process industries.
               <picture>
                 <source 
                   media="(max-width: 600px)" 
-                  srcSet="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  srcSet="/about/a1.png" 
                 />
                 <source 
                   media="(min-width: 601px)" 
-                  srcSet="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  srcSet="/about/a1.png" 
                 />
                 <img 
                   aria-hidden="true" 
                   decoding="async" 
-                  src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  src="/about/a1.png" 
                   alt="Industrial maintenance work" 
                   width="200" 
                   height="150"
@@ -120,16 +120,16 @@ a trusted name across India’s power and process industries.
               <picture>
                 <source 
                   media="(max-width: 600px)" 
-                  srcSet="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  srcSet="/about/a2.png" 
                 />
                 <source 
                   media="(min-width: 601px)" 
-                  srcSet="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  srcSet="/about/a2.png" 
                 />
                 <img 
                   aria-hidden="true" 
                   decoding="async" 
-                  src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                  src="/about/a2.png" 
                   alt="Power plant equipment" 
                   width="200" 
                   height="150"
@@ -141,16 +141,16 @@ a trusted name across India’s power and process industries.
               <picture>
                 <source 
                   media="(max-width: 600px)" 
-                  srcSet="https://cgu-odisha.ac.in/wp-content/uploads/2023/05/1_xqAM05_tfNP7VCcE0VAYzw-2048x1408-1.jpeg" 
+                  srcSet="/about/a3.png" 
                 />
                 <source 
                   media="(min-width: 601px)" 
-                  srcSet="https://cgu-odisha.ac.in/wp-content/uploads/2023/05/1_xqAM05_tfNP7VCcE0VAYzw-2048x1408-1.jpeg" 
+                  srcSet="/about/a3.png" 
                 />
                 <img 
                   aria-hidden="true" 
                   decoding="async" 
-                  src="https://cgu-odisha.ac.in/wp-content/uploads/2023/05/1_xqAM05_tfNP7VCcE0VAYzw-2048x1408-1.jpeg" 
+                  src="/about/a3.png" 
                   alt="Technical engineering work" 
                   width="200" 
                   height="150"
