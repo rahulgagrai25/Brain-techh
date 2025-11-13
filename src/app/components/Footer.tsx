@@ -388,12 +388,12 @@ function Footer() {
             <div className="cs-links-section cs-contact-us">
               <h3>Contact Us</h3>
               <div className="cs-contact-info">
-                <div className="cs-contact-item">
+                {/* <div className="cs-contact-item">
                   <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
                   </svg>
                   <span>SF, 10/2, Unnati Apartment, Sector-3, Rajendra Nagar<br />Ghaziabad, Uttar Pradesh – 201005</span>
-                </div>
+                </div> */}
                 <div className="cs-contact-item">
                   <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
@@ -411,7 +411,7 @@ function Footer() {
                   <svg className="cs-contact-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
-                  <p>braintechengineers@yahoo.com<br/>braintech@engineer.com</p>
+                  <p>braintechengineers@yahoo.com<br/>braintech@engineer.com<br/>ho@braintechh.com</p>
                 </div>
               </div>
             </div>
