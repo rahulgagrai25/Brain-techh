@@ -125,7 +125,7 @@ function Certificates() {
                 <div className="cs-modal-info">
                   <h3>{selectedCertificate.title}</h3>
                   <p>{selectedCertificate.description}</p>
-                  <div className="cs-modal-details">
+                  {/* <div className="cs-modal-details">
                     <div className="cs-modal-detail">
                       <strong>Issued By:</strong> {selectedCertificate.issuedBy}
                     </div>
@@ -136,7 +136,7 @@ function Certificates() {
                       <strong>Certificate No:</strong>{" "}
                       {selectedCertificate.certificateNo}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </>
             )}
@@ -382,7 +382,7 @@ function Certificates() {
           position: absolute;
           top: 1rem;
           right: 1rem;
-          background: var(--primary);
+          background: #d4d4d8;
           color: black;
           border: none;
           width: 2.5rem;
